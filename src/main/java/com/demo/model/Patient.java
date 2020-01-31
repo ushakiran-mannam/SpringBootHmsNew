@@ -1,4 +1,4 @@
-package com.demo;
+package com.demo.model;
 
 public class Patient extends User{
 
@@ -9,13 +9,13 @@ public class Patient extends User{
 	private String name;
 
 	/** The area. */
-	private String areaOfLiving;
+	private String area;
 
 	/** The state. */
-//	private String state;
+	private String state;
 
 	/** The city. */
-	private String newCity;
+	private String city;
 
 	/**
 	 * Gets the id.
@@ -82,24 +82,24 @@ public class Patient extends User{
 	 *
 	 * @return the state
 	 */
-//	public String getState() {
-//		return state;
-//	}
-//
-//	/**
-//	 * Sets the state.
-//	 *
-//	 * @param state the new state
-//	 */
-//	public void setState(String state) {
-//		this.state = state;
-//	}
-	public String getAreaOfLiving() {
-		return areaOfLiving;
+	public String getState() {
+		return state;
 	}
 
-	public void setAreaOfLiving(String area) {
-		this.areaOfLiving = area;
+	/**
+	 * Sets the state.
+	 *
+	 * @param state the new state
+	 */
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getArea() {
+		return area;
+	}
+
+	public void setArea(String area) {
+		this.area = area;
 	}
 
 	/**
@@ -107,8 +107,8 @@ public class Patient extends User{
 	 *
 	 * @return the city
 	 */
-	public String getNewCity() {
-		return newCity;
+	public String getCity() {
+		return city;
 	}
 
 	
@@ -118,8 +118,8 @@ public class Patient extends User{
 	 *
 	 * @param city the new city
 	 */
-	public void setNewCity(String newCity) {
-		this.newCity = newCity;
+	public void setCity(String city) {
+		this.city = city;
 	}
 
 	/** The id. */
@@ -132,7 +132,7 @@ public class Patient extends User{
 	 */
 	@Override
 	public String toString() {
-		return id + "," + name + "," + age + "," + "," + newCity + "," ;
+		return id + "," + name + "," + age + "," + "," + city + "," ;
 
 	}
 

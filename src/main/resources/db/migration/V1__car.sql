@@ -1,0 +1,1 @@
+create table car ( name varchar(20) , owner varchar(20));

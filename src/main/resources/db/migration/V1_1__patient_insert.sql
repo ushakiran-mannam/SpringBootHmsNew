@@ -1,1 +1,0 @@
-insert into patients(first_name, last_name) values('James', 'Wood');
